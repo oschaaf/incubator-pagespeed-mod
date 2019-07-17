@@ -18,6 +18,7 @@ cc_library(
         "export_template.h",
         "compiler_specific.h",
         "debug/alias.h",
+        "macros.h",
     ],
     visibility = ["//visibility:public"],
     deps = [

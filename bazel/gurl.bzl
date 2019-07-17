@@ -18,7 +18,7 @@ cc_library(
         "url_canon_pathurl.cc",
         "url_canon_query.cc",
         "url_canon_relative.cc",
-#        "url_canon_stdstring.cc",
+        "url_canon_stdstring.cc",
         "url_canon_stdurl.cc",
         "url_constants.cc",
         "url_parse_file.cc",
