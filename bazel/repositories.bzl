@@ -8,6 +8,7 @@ load(":libwebp.bzl", "libwebp_build_rule")
 load(":google_sparsehash.bzl", "google_sparsehash_build_rule")
 load(":protobuf.bzl", "protobuf_build_rule")
 load(":gurl.bzl", "gurl_build_rule")
+load(":uriparser.bzl", "uriparser_build_rule")
 
 ENVOY_COMMIT = "master"
 BROTLI_COMMIT = "882f41850b679c1ff4a3804d5515d142a5807376"
@@ -23,6 +24,7 @@ GLOG_COMMIT = "96a2f23dca4cc7180821ca5f32e526314395d26a"
 GFLAGS_COMMIT = "e171aa2d15ed9eb17054558e0b3a6a413bb01067"
 PROTOBUF_COMMIT = "6a59a2ad1f61d9696092f79b6d74368b4d7970a3"
 GURL_COMMIT = "77.0.3855.1"
+URIPARSER_COMMIT = "737e95f67bc2e5d8b90a1392797b353b52e5124a"  # 0.9.3
 
 def mod_pagespeed_dependencies():
     http_archive(
@@ -130,4 +132,12 @@ def mod_pagespeed_dependencies():
         url = "https://chromium.googlesource.com/chromium/src/+archive/refs/tags/%s/url.tar.gz" % GURL_COMMIT,
         build_file_content = gurl_build_rule,
         sha256 = "",
+    )
+
+    http_archive(
+        name = "uriparser",
+        url = "https://github.com/uriparser/uriparser/archive/%s.tar.gz" % URIPARSER_COMMIT,
+        build_file_content = uriparser_build_rule,
+        strip_prefix = "uriparser-%s" % URIPARSER_COMMIT,
+        sha256 = "2eb098617406ad7fefd91d621a9755353a57714d460973d64ea15932d31cdfb1",
     )

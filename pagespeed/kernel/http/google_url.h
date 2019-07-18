@@ -6,9 +6,9 @@
  * to you under the Apache License, Version 2.0 (the
  * "License"); you may not use this file except in compliance
  * with the License.  You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing,
  * software distributed under the License is distributed on an
  * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
@@ -28,54 +28,55 @@
 #include "pagespeed/kernel/base/string.h"
 #include "pagespeed/kernel/base/string_util.h"
 
+//#include "url/gurl.h"
+//#include "url/url_parse.h"
+//#include "url/url_util.h"
 
-#include "url/gurl.h"
-#include "url/url_parse.h"
-#include "url/url_util.h"
+#include "external/uriparser/include/uriparser/Uri.h"
 
 namespace net_instaweb {
 
 // Prepare for flattening of the namespaces in newer Chromiums.
 
 namespace url {
-
+/*
 using url_canon::Replacements;
-using url_parse::PORT_UNSPECIFIED;
-using url_parse::PORT_INVALID;
 using url_parse::Component;
 using url_parse::Parsed;
+using url_parse::PORT_INVALID;
+using url_parse::PORT_UNSPECIFIED;
 using url_util::Initialize;
 using url_util::Shutdown;
+ */
 
-};  // namespace url
-
+}; // namespace url
 
 enum UrlRelativity {
-  kAbsoluteUrl,   // http://example.com/foo/bar/file.ext?k=v#f
-  kNetPath,       // //example.com/foo/bar/file.ext?k=v#f
-  kAbsolutePath,  // /foo/bar/file.ext?k=v#f
-  kRelativePath,  // bar/file.ext?k=v#f
+  kAbsoluteUrl,  // http://example.com/foo/bar/file.ext?k=v#f
+  kNetPath,      // //example.com/foo/bar/file.ext?k=v#f
+  kAbsolutePath, // /foo/bar/file.ext?k=v#f
+  kRelativePath, // bar/file.ext?k=v#f
 };
 
 class GoogleUrl {
- public:
-  explicit GoogleUrl(const GoogleString& spec);
+public:
+  explicit GoogleUrl(const GoogleString &spec);
   explicit GoogleUrl(StringPiece sp);
-  explicit GoogleUrl(const char* str);
+  explicit GoogleUrl(const char *str);
   // The following three constructors create a new GoogleUrl by resolving the
   // String(Piece) against the base.
-  GoogleUrl(const GoogleUrl& base, const GoogleString& relative);
-  GoogleUrl(const GoogleUrl& base, StringPiece relative);
-  GoogleUrl(const GoogleUrl& base, const char* relative);
+  GoogleUrl(const GoogleUrl &base, const GoogleString &relative);
+  GoogleUrl(const GoogleUrl &base, StringPiece relative);
+  GoogleUrl(const GoogleUrl &base, const char *relative);
   GoogleUrl();
 
-  void Swap(GoogleUrl* google_url);
+  void Swap(GoogleUrl *google_url);
 
   bool Reset(StringPiece new_url);
-  bool Reset(const GoogleUrl& new_url);
-  bool Reset(const GoogleUrl& base, const GoogleString& relative);
-  bool Reset(const GoogleUrl& base, StringPiece relative);
-  bool Reset(const GoogleUrl& base, const char* relative);
+  bool Reset(const GoogleUrl &new_url);
+  bool Reset(const GoogleUrl &base, const GoogleString &relative);
+  bool Reset(const GoogleUrl &base, StringPiece relative);
+  bool Reset(const GoogleUrl &base, const char *relative);
 
   // Resets this URL to be invalid.
   void Clear();
@@ -93,12 +94,12 @@ class GoogleUrl {
   // This is a factory method that returns a pointer, the caller is responsible
   // for the management of the new object's memory (the caller owns the
   // pointer).
-  GoogleUrl* CopyAndAddQueryParam(StringPiece unescaped_name,
+  GoogleUrl *CopyAndAddQueryParam(StringPiece unescaped_name,
                                   StringPiece unescaped_value) const;
   // Same as CopyAndAddQueryParam() but name and value must already be escaped.
   // Most users should use CopyAndAddQueryParam() instead for safety.
-  GoogleUrl* CopyAndAddEscapedQueryParam(
-      StringPiece escaped_name, StringPiece escaped_value) const;
+  GoogleUrl *CopyAndAddEscapedQueryParam(StringPiece escaped_name,
+                                         StringPiece escaped_value) const;
 
   // For "http://a.com/b/c/d?e=f/g#r" returns "http://a.com/b/c/d"
   // Returns a StringPiece, only valid for the lifetime of this object.
@@ -175,32 +176,37 @@ class GoogleUrl {
   StringPiece UncheckedSpec() const;
 
   // This method is primarily for printf purposes.
-  const char* spec_c_str() const {
-    return gurl_.possibly_invalid_spec().c_str();
+  const char *spec_c_str() const {
+    return "TODO"; // gurl_.possibly_invalid_spec().c_str();
   }
 
-  int IntPort() const { return gurl_.IntPort(); }
+  int IntPort() const { return 0; /* gurl_.hostText.first*/ }
 
   // Returns the effective port number, which is dependent on the scheme.
-  int EffectiveIntPort() const { return gurl_.EffectiveIntPort(); }
+  int EffectiveIntPort() const { return 0 /* gurl_.EffectiveIntPort()*/; }
 
   // Returns the default port for given scheme, or url::PORT_UNSPECIFIED
   // if the scheme isn't recognized. Scheme is expected to be in lowercase.
   static int DefaultPortForScheme(StringPiece scheme);
 
-  bool is_empty() const { return gurl_.is_empty(); }
-  bool has_scheme() const { return gurl_.has_scheme(); }
-  bool has_path() const { return gurl_.has_path(); }
-  bool has_query() const { return gurl_.has_query(); }
+  bool is_empty() const {
+    return false; /*url_.is_empty() */
+    ;
+  }
+  bool has_scheme() const {
+    return false;
+  /*gurl_.has_scheme(); */ }
+  bool has_path() const { return false; /*gurl_.has_path(); */ }
+  bool has_query() const { return false; /*gurl_.has_query(); */ }
 
-  bool SchemeIs(const char* lower_ascii_scheme) const {
-    return gurl_.SchemeIs(lower_ascii_scheme);
+  bool SchemeIs(const char *lower_ascii_scheme) const {
+    return false; // gurl_.SchemeIs(lower_ascii_scheme);
   }
 
   // TODO(nforman): get GURL to take a StringPiece so we don't have to do
   // any copying.
   bool SchemeIs(StringPiece lower_ascii_scheme) const {
-    return gurl_.SchemeIs(lower_ascii_scheme.as_string().c_str());
+    return false; // gurl_.SchemeIs(GoogleString(lower_ascii_scheme).c_str());
   }
 
   // Find out how relative the URL string is.
@@ -212,14 +218,16 @@ class GoogleUrl {
   //
   // It is illegal to call this for invalid urls (check IsWebValid() first).
   StringPiece Relativize(UrlRelativity url_relativity,
-                         const GoogleUrl& base_url) const;
+                         const GoogleUrl &base_url) const;
 
   // Defiant equality operator!
-  bool operator==(const GoogleUrl& other) const {
-    return gurl_ == other.gurl_;
+  bool operator==(const GoogleUrl &other) const {
+    return false;
+    // url_ == other.gurl_;
   }
-  bool operator!=(const GoogleUrl& other) const {
-    return gurl_ != other.gurl_;
+  bool operator!=(const GoogleUrl &other) const {
+    return false;
+    // gurl_ != other.gurl_;
   }
 
   // Unescape a query parameter, converting all %XX to the the actual char 0xXX.
@@ -259,19 +267,19 @@ class GoogleUrl {
   // what's in %-encoded form and what isn't as GoogleUrl does.
   static GoogleString CanonicalizePath(StringPiece path);
 
- private:
+private:
   // Returned by *Position methods when that position is not well-defined.
   static const size_t npos;
 
   static const char kReservedChars[];
   static bool IsReservedChar(char c);
 
-  explicit GoogleUrl(const GURL& gurl);
+  explicit GoogleUrl(const UriUriA &gurl);
   void Init();
 
-  static size_t LeafEndPosition(const GURL& gurl);
-  static size_t LeafStartPosition(const GURL& gurl);
-  static size_t PathStartPosition(const GURL& gurl);
+  static size_t LeafEndPosition(const UriUriA &gurl);
+  static size_t LeafStartPosition(const UriUriA &gurl);
+  static size_t PathStartPosition(const UriUriA &gurl);
   size_t LeafEndPosition() const;
   size_t LeafStartPosition() const;
   size_t PathStartPosition() const;
@@ -279,16 +287,16 @@ class GoogleUrl {
                                      bool convert_plus_to_space);
 
   // Resolves a URL against a base. Returns whether the resolution worked.
-  inline bool ResolveHelper(const GURL& base, const std::string& path_and_leaf);
+  inline bool ResolveHelper(const UriUriA &base,
+                            const std::string &path_and_leaf);
 
-  GURL gurl_;
+  UriUriA gurl_;
   bool is_web_valid_;
   bool is_web_or_data_valid_;
 
   DISALLOW_COPY_AND_ASSIGN(GoogleUrl);
-};  // class GoogleUrl
+}; // class GoogleUrl
 
-}  // namespace net_instaweb
+} // namespace net_instaweb
 
-
-#endif  // PAGESPEED_KERNEL_HTTP_GOOGLE_URL_H_
+#endif // PAGESPEED_KERNEL_HTTP_GOOGLE_URL_H_
