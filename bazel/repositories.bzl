@@ -22,7 +22,7 @@ GOOGLE_SPARSEHASH_COMMIT = "6ff8809259d2408cb48ae4fa694e80b15b151af3"
 GLOG_COMMIT = "96a2f23dca4cc7180821ca5f32e526314395d26a"
 GFLAGS_COMMIT = "e171aa2d15ed9eb17054558e0b3a6a413bb01067"
 PROTOBUF_COMMIT = "e8ae137c96444ea313485ed1118c5e43b2099cf1"
-GURL_COMMIT = "77.0.3855.1"
+GURL_COMMIT = "405b6e1798f88e85291820b30344723512e0c38f"
 
 def mod_pagespeed_dependencies():
     http_archive(
@@ -368,8 +368,8 @@ cc_binary(
     )
 
     http_archive(
-        name = "url",
-        url = "https://chromium.googlesource.com/chromium/src/+archive/refs/tags/%s/url.tar.gz" % GURL_COMMIT,
+        name = "googleurl",
+        url = "https://chromium.googlesource.com/external/google-url/+archive/%s.tar.gz" % GURL_COMMIT,
         build_file_content = gurl_build_rule,
-        sha256 = "642891ab55b707dc20ee50389ee857359c47b29a96517208cabd85481a8369b5",
+        sha256 = "20eaa74c16fd2e90a89f90b297582c5b4f60d34b41a79b8b8d9ed9a6151a9214",
     )

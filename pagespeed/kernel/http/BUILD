@@ -13,10 +13,10 @@ envoy_package()
 envoy_cc_library(
     name = "http",
     srcs = [
-        #"google_url.cc",
+        "google_url.cc",
     ],
     hdrs = [
-        #"google_url.h",
+        "google_url.h",
     ],
     repository = "@envoy",
     visibility = ["//visibility:public"],
@@ -24,7 +24,7 @@ envoy_cc_library(
     deps = [
         "@glog",
         "//pagespeed/kernel/base:pagespeed_base",
-        #"@url//:url",
+        "@googleurl//:googleurl",
     ],
 )
 

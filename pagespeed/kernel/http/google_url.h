@@ -29,9 +29,9 @@
 #include "pagespeed/kernel/base/string_util.h"
 
 
-#include "url/gurl.h"
-#include "url/url_parse.h"
-#include "url/url_util.h"
+#include "googleurl/src/gurl.h"
+#include "googleurl/src/url_parse.h"
+#include "googleurl/src/url_util.h"
 
 namespace net_instaweb {
 
@@ -200,7 +200,7 @@ class GoogleUrl {
   // TODO(nforman): get GURL to take a StringPiece so we don't have to do
   // any copying.
   bool SchemeIs(StringPiece lower_ascii_scheme) const {
-    return gurl_.SchemeIs(lower_ascii_scheme.as_string().c_str());
+    return gurl_.SchemeIs(GoogleString(lower_ascii_scheme).c_str());
   }
 
   // Find out how relative the URL string is.

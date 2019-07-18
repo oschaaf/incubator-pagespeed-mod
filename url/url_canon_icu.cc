@@ -7,13 +7,16 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "base/lazy_instance.h"
+//#include "base/lazy_instance.h"
 #include "base/logging.h"
-#include "third_party/icu/source/common/unicode/ucnv.h"
-#include "third_party/icu/source/common/unicode/ucnv_cb.h"
-#include "third_party/icu/source/common/unicode/uidna.h"
-#include "third_party/chromium/src/googleurl/src/url_canon_icu.h"
-#include "third_party/chromium/src/googleurl/src/url_canon_internal.h"  // for _itoa_s
+// #include "pagespeed/kernel/base/string_util.h"
+
+
+#include "external/icu/source/common/unicode/ucnv.h"
+#include "external/icu/source/common/unicode/ucnv_cb.h"
+#include "external/icu/source/common/unicode/uidna.h"
+#include "googleurl/src/url_canon_icu.h"
+#include "googleurl/src/url_canon_internal.h"  // for _itoa_s
 
 namespace url_canon {
 
