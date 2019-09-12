@@ -9,6 +9,7 @@ load(
 cc_binary(
     name = "libmod_pagespeed.so",
     linkshared = True,
+    linkstatic= True,
     visibility = ["//visibility:public"],
     deps = [":apache"],
 )
