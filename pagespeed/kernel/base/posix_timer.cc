@@ -24,7 +24,7 @@
 #include <unistd.h>
 #include <cerrno>
 
-#include "base/logging.h"
+//#include "base/logging.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/string.h"
 

@@ -63,11 +63,15 @@
  * Unit tests are in base/time/pr_time_unittest.cc.
  */
 #include <limits.h>
-#include "base/logging.h"
+//#include "base/logging.h"
 #include "third_party/nspr/prtime.h"
 //#include "build/build_config.h"
 #include <errno.h>  /* for EINVAL */
 #include <time.h>
+#include <stdio.h>
+#include <ctype.h>
+#include <stdio.h>
+#include <string.h>
 /*
  * The COUNT_LEAPS macro counts the number of leap years passed by
  * till the start of the given year Y.  At the start of the year 4

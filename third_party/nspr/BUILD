@@ -12,6 +12,6 @@ cc_library(
         "prtime.h",
     ],
     visibility = ["//visibility:public"],
-    deps = ["//gurl:url"]
+    deps = ["//external:gurl"]
 )
     

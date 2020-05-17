@@ -566,7 +566,7 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         ":rewriter_protos_cc",
-        "//base",
+        "//external:base",
         "//net/instaweb:net_instaweb_lib",
         "//net/instaweb/http",
         "//net/instaweb/spriter",

@@ -31,7 +31,7 @@ typedef uint32_t uint32;
 typedef int32_t int32;
 
 // this gets us check/dcheck/(v)log etc
-#include "base/logging.h"
+//#include "base/logging.h"
 
 #define arraysize(a)                                                           \
   ((sizeof(a) / sizeof(*(a))) /                                                \

@@ -81,11 +81,10 @@ cc_library(
     deps = [
         "//third_party/google-sparsehash:google_sparsehash_gen",
         "@google_sparsehash",
-        "//gurl:url",
+        "//external:gurl",
         "//third_party/nspr:prtime",
         "@icu//:icudata",
         "@icu//:icuuc",
-        "@mod_pagespeed//base:log_shim",
         "@glog",
         #"//pagespeed/kernel/sharedmem:shared_mem",
         #"//pagespeed/kernel/util:util",

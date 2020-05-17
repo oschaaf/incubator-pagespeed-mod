@@ -73,7 +73,7 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         ":util_re2",
-        "//gurl:url",
+        "//external:gurl",
         "//pagespeed/kernel/base:pagespeed_base",
         "//pagespeed/kernel/html",
         "//pagespeed/kernel/http",

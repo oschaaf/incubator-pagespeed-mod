@@ -46,8 +46,7 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
     deps = [
-        "//gurl:url",
-        "@mod_pagespeed//base:log_shim",
+        "//external:gurl",
         "//pagespeed/kernel/base:pagespeed_base",
     ],
 )
