@@ -23,7 +23,7 @@
 #include <map>
 #include <utility>                      // for pair
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/gtest.h"

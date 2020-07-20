@@ -26,7 +26,7 @@
 
 #include <cstddef>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/cached_result.pb.h"
 #include "net/instaweb/rewriter/public/output_resource.h"
 #include "net/instaweb/rewriter/public/output_resource_kind.h"

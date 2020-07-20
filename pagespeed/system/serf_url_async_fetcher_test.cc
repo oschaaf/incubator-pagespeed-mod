@@ -28,7 +28,7 @@
 #include "apr_network_io.h"
 #include "apr_pools.h"
 #include "apr_uri.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"

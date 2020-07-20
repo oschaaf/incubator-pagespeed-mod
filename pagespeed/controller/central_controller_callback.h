@@ -21,7 +21,7 @@
 #ifndef PAGESPEED_CONTROLLER_CENTRAL_CONTROLLER_CALLBACK_H_
 #define PAGESPEED_CONTROLLER_CENTRAL_CONTROLLER_CALLBACK_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/function.h"
 #include "pagespeed/kernel/base/scoped_ptr.h"

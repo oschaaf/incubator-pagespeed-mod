@@ -23,7 +23,7 @@
 
 #include <cstddef>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/escaping.h"
 #include "pagespeed/kernel/base/hasher.h"

@@ -39,7 +39,7 @@
 
 #include "fmt/format.h"
 #include "fmt/printf.h"
-#include "base/strings/stringprintf.h"
+#include "strings/stringprintf.h"
 
 #include <cstdlib> // NOLINT
 #include <string>  // NOLINT
@@ -55,7 +55,7 @@ public:
   StringPiece(const absl::string_view& s) : absl::string_view(s) {}
   StringPiece(const GoogleString& s) : absl::string_view(s.data(), s.size()) {}
 
-  using string_view::string_view;
+  using absl::string_view::string_view;
 
   void CopyToString(GoogleString* dest) const {
     *dest = std::string(*this);
@@ -83,10 +83,10 @@ public:
   }
 
   StringPiece substr(uint32_t from, uint32_t to) const {
-    return string_view::substr(from, to);
+    return absl::string_view::substr(from, to);
   }
   StringPiece substr(uint32_t from) const {
-    return string_view::substr(from);
+    return absl::string_view::substr(from);
   }
 };
 

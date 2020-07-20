@@ -20,7 +20,7 @@
 
 #include "pagespeed/system/system_server_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/url_async_fetcher.h"
 #include "net/instaweb/http/public/url_async_fetcher_stats.h"
 #include "net/instaweb/rewriter/public/rewrite_driver.h"

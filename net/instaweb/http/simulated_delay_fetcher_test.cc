@@ -19,7 +19,7 @@
 
 #include "net/instaweb/http/public/simulated_delay_fetcher.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "pagespeed/kernel/base/google_message_handler.h"

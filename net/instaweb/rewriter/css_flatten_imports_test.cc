@@ -19,7 +19,7 @@
 
 
 #include <cstddef>
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/css_rewrite_test_base.h"
 #include "net/instaweb/rewriter/public/rewrite_driver.h"
 #include "net/instaweb/rewriter/public/rewrite_options.h"

@@ -22,7 +22,7 @@
 
 #include "net/instaweb/http/public/http_cache_failure.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/string_util.h"
 #include "pagespeed/kernel/http/http_names.h"

@@ -25,7 +25,7 @@
 #include <string.h>                     // for memcpy, NULL, memcmp, etc
 #include <algorithm>                    // for max
 
-#include "base/logging.h"               // for operator<<, CHECK, etc
+#include "base_/log_shim.h"               // for operator<<, CHECK, etc
 #include "base/stringprintf.h"          // for StringPrintf, StringAppendF
 #include "strings/stringpiece.h"        // for CssStringPiece, etc
 #include "third_party/utf/utf.h"        // for isvalidcharntorune, etc

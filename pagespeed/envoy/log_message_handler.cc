@@ -26,7 +26,7 @@
 
 //#include "base/debug/debugger.h"
 //#include "base/debug/stack_trace.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/public/version.h"
 #include "pagespeed/kernel/base/string_util.h"
 

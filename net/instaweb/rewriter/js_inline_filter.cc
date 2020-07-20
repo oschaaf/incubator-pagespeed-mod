@@ -21,7 +21,7 @@
 
 #include "net/instaweb/rewriter/public/js_inline_filter.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/inline_rewrite_context.h"
 #include "net/instaweb/rewriter/public/javascript_code_block.h"
 #include "net/instaweb/rewriter/public/resource.h"

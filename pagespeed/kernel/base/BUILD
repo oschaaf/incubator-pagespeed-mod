@@ -81,16 +81,13 @@ cc_library(
     deps = [
         "//third_party/google-sparsehash:google_sparsehash_gen",
         "@google_sparsehash",
-        "//gurl:url",
-        "//third_party/nspr:prtime",
-        "@icu//:icudata",
-        "@icu//:icuuc",
-        "@mod_pagespeed//base:log_shim",
-        "@glog",
-        #"//pagespeed/kernel/sharedmem:shared_mem",
-        #"//pagespeed/kernel/util:util",
+        "@org_unicode_icuuc//:common",
+        "@com_googlesource_googleurl//base",
+        "@com_googlesource_googleurl//base/strings",
+        "//base_:log_shim",
         "@com_google_absl//absl/base:base",
         "@com_google_absl//absl/strings:strings",
+        "@com_google_absl//absl/time:time",
         "@com_github_fmtlib_fmt//:fmtlib"
     ],
 )
@@ -192,6 +189,7 @@ cc_library(
     visibility = ["//visibility:public"],
     deps = [
         ":pagespeed_base_core",
+        "@com_googlesource_googleurl//base:base",
         "//third_party/base64:base64",
         "@jsoncpp//:jsoncpp",
         "@com_google_googletest//:gtest",# for gtest_prod.h   

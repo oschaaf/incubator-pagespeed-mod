@@ -22,7 +22,7 @@
 
 #include <set>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/rewrite_driver.h"
 #include "net/instaweb/rewriter/public/server_context.h"
 #include "net/instaweb/rewriter/public/static_asset_manager.h"

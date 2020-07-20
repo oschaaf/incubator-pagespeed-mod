@@ -21,7 +21,7 @@
 #ifndef PAGESPEED_CONTROLLER_REQUEST_RESULT_RPC_HANDLER_H_
 #define PAGESPEED_CONTROLLER_REQUEST_RESULT_RPC_HANDLER_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/controller/rpc_handler.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/function.h"

@@ -22,7 +22,7 @@
 
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/string_util.h"
 
@@ -293,7 +293,7 @@ void MimeTypeListToContentTypeSet(
     if (ct == NULL) {
       LOG(WARNING) << "'" << *i << "' is not a recognized mime-type.";
     } else {
-      VLOG(1) << "Adding '" << *i << "' to the content-type set.";
+      //VLOG(1) << "Adding '" << *i << "' to the content-type set.";
       out->insert(ct);
     }
   }

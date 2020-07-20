@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/inline_output_resource.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/output_resource_kind.h"
 #include "net/instaweb/rewriter/public/resource_namer.h"
 #include "net/instaweb/rewriter/public/server_context.h"

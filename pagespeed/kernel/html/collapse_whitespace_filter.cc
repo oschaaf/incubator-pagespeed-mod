@@ -24,7 +24,7 @@
 #include <cstddef>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/html/html_element.h"
 #include "pagespeed/kernel/html/html_name.h"
 #include "pagespeed/kernel/html/html_node.h"

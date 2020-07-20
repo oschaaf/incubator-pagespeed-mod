@@ -21,7 +21,7 @@
 #include <cstdio>
 #include <fstream>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/file_message_handler.h"
 #include "pagespeed/kernel/base/string.h"

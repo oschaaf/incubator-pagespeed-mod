@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/critical_images_beacon_filter.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/critical_images_finder.h"
 #include "net/instaweb/rewriter/public/lazyload_images_filter.h"
 #include "net/instaweb/rewriter/public/request_properties.h"

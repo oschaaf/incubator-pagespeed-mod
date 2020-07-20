@@ -22,7 +22,7 @@
 
 #include "net/instaweb/rewriter/public/test_rewrite_driver_factory.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/counting_url_async_fetcher.h"
 #include "net/instaweb/http/public/http_cache.h"
 #include "net/instaweb/http/public/mock_url_fetcher.h"

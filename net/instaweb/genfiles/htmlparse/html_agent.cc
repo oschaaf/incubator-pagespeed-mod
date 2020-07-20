@@ -50,7 +50,7 @@
 
 // html_agent.cc is automatically generated from html_agent.gperf.
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/htmlparse/public/html_agent.h"
 #include "net/instaweb/util/public/string_util.h"
 

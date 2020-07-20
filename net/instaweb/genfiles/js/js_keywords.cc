@@ -50,7 +50,7 @@
 
 // js_keywords.cc is automatically generated from js_keywords.gperf.
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/js/public/js_keywords.h"
 #include "net/instaweb/util/public/string_util.h"
 

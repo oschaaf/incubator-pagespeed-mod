@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/js/js_minify.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 //#include "strings/stringpiece_utils.h"
 #include "pagespeed/kernel/base/source_map.h"
 #include "pagespeed/kernel/base/string.h"

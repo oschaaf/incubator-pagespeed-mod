@@ -25,7 +25,7 @@
 #include <string>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "strings/stringpiece.h"
 #include "util/utf8/public/unicodetext.h"
 #include "webutil/css/string.h"

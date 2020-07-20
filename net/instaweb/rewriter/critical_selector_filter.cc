@@ -26,7 +26,7 @@
 #include <cstddef>
 #include <set>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/critical_selector_finder.h"
 #include "net/instaweb/rewriter/public/css_minify.h"
 #include "net/instaweb/rewriter/public/css_tag_scanner.h"

@@ -20,7 +20,7 @@
 #ifndef STRINGS_ESCAPING_H_
 #define STRINGS_ESCAPING_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 
 namespace strings {
 

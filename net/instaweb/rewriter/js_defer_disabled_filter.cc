@@ -28,7 +28,7 @@
 #include "pagespeed/kernel/html/html_element.h"
 #include "pagespeed/kernel/html/html_name.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/javascript_code_block.h"
 #include "pagespeed/kernel/base/null_message_handler.h"
 

@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/add_instrumentation_filter.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "net/instaweb/http/public/request_timing_info.h"
 #include "net/instaweb/rewriter/public/experiment_util.h"

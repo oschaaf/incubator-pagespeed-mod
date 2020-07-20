@@ -28,7 +28,7 @@
 #include <utility>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/domain_lawyer.h"
 #include "net/instaweb/rewriter/public/experiment_util.h"
 #include "net/instaweb/rewriter/public/file_load_policy.h"

@@ -24,7 +24,7 @@
 
 #include "net/instaweb/http/public/ua_sensitive_test_fetcher.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "net/instaweb/http/public/url_async_fetcher.h"

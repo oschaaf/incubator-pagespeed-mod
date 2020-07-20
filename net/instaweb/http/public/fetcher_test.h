@@ -23,7 +23,7 @@
 #ifndef NET_INSTAWEB_HTTP_PUBLIC_FETCHER_TEST_H_
 #define NET_INSTAWEB_HTTP_PUBLIC_FETCHER_TEST_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/counting_url_async_fetcher.h"
 #include "net/instaweb/http/public/mock_url_fetcher.h"

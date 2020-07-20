@@ -23,7 +23,7 @@
 #include <math.h>
 #include <algorithm>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/message_handler.h"
 #include "pagespeed/kernel/image/scanline_utils.h"
 

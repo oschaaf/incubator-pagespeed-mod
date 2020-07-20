@@ -39,7 +39,7 @@
 #include "webutil/css/property.h"
 
 #include "base/googleinit.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "webutil/css/string_util.h"
 
 namespace Css {

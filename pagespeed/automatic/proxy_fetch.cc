@@ -23,7 +23,7 @@
 #include <algorithm>
 #include <cstddef>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/config/rewrite_options_manager.h"
 #include "net/instaweb/http/public/cache_url_async_fetcher.h"
 #include "pagespeed/opt/logging/log_record.h"

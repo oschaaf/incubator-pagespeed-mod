@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/util/url_segment_encoder.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/string.h"
 #include "pagespeed/kernel/base/string_util.h"
 #include "pagespeed/kernel/util/url_escaper.h"

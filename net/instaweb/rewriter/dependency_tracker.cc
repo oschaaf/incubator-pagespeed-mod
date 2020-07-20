@@ -22,7 +22,7 @@
 #include <memory>
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/dependencies.pb.h"
 #include "net/instaweb/rewriter/public/property_cache_util.h"
 #include "net/instaweb/rewriter/public/rewrite_driver.h"

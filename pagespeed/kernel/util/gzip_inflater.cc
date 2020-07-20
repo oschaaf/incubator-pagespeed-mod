@@ -22,7 +22,7 @@
 
 #include <cstddef>
 #include <cstdlib>
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #ifdef USE_SYSTEM_ZLIB
 #include "zlib.h"  // NOLINT
 #include "zconf.h"  // NOLINT

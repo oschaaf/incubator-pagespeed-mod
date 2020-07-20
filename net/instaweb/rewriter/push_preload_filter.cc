@@ -31,7 +31,7 @@
 #include <unordered_set>
 #include <utility>                      // for pair
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/dependencies.pb.h"
 #include "net/instaweb/rewriter/public/collect_dependencies_filter.h"
 #include "net/instaweb/rewriter/public/dependency_tracker.h"

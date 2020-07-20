@@ -20,7 +20,7 @@
 
 #include "pagespeed/apache/instaweb_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/apache/apache_server_context.h"
 #include "pagespeed/apache/header_util.h"
 #include "pagespeed/apache/mod_instaweb.h"

@@ -25,7 +25,7 @@
 #include <cerrno>
 #include <cstdio>                      // for pclose, popen, FILE
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/http_response_parser.h"
 #include "pagespeed/kernel/base/message_handler.h"

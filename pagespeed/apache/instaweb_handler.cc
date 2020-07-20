@@ -22,7 +22,7 @@
 
 #include <cstddef>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/cache_url_async_fetcher.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "net/instaweb/http/public/sync_fetcher_adapter_callback.h"

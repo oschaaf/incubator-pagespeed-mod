@@ -23,7 +23,7 @@
 #include <sys/stat.h>
 #include <memory>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/controller/central_controller_rpc_server.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"
 #include "pagespeed/kernel/base/basictypes.h"

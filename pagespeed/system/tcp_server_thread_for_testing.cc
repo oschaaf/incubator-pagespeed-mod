@@ -24,7 +24,7 @@
 #include <cstdlib>
 
 #include "apr_network_io.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"
 #include "pagespeed/kernel/base/gtest.h"
 #include "pagespeed/system/apr_thread_compatible_pool.h"

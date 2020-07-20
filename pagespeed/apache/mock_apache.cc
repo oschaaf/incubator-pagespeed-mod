@@ -22,7 +22,7 @@
 #include <cstdlib>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/apache/apache_httpd_includes.h"
 #include "pagespeed/kernel/base/string_util.h"
 #include "pagespeed/kernel/http/http_names.h"

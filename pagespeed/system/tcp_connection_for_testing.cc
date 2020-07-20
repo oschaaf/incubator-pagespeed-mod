@@ -22,7 +22,7 @@
 #include <sys/socket.h>
 
 #include "apr_network_io.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 //#include "strings/stringpiece_utils.h"
 #include "pagespeed/system/apr_thread_compatible_pool.h"
 

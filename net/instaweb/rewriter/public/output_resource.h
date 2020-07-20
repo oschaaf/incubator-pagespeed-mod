@@ -24,7 +24,7 @@
 #ifndef NET_INSTAWEB_REWRITER_PUBLIC_OUTPUT_RESOURCE_H_
 #define NET_INSTAWEB_REWRITER_PUBLIC_OUTPUT_RESOURCE_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "net/instaweb/rewriter/public/output_resource_kind.h"
 #include "net/instaweb/rewriter/public/resource.h"

@@ -25,7 +25,7 @@
 #include "base/scoped_ptr.h"
 #include <string>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "testing/base/public/googletest.h"
 #include "gtest/gtest.h"
 #include "webutil/css/parser.h"

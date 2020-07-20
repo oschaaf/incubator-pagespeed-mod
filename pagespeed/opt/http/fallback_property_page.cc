@@ -20,7 +20,7 @@
 
 #include "pagespeed/opt/http/fallback_property_page.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/http/google_url.h"
 
 namespace net_instaweb {

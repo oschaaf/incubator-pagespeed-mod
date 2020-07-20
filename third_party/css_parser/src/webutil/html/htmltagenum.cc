@@ -22,7 +22,7 @@
 #include "webutil/html/htmltagenum.h"
 
 #include "base/macros.h"
-#include "base/stringprintf.h"
+#include "stringprintf.h"
 
 
 #define arraysize(a)                                                           \

@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/base/time_util.h"
 #include <ctime>
-#include "third_party/nspr/prtime.h"  // NOLINT
+#include "absl/time/time.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/string.h"
 #include "pagespeed/kernel/base/string_util.h"
@@ -108,10 +108,31 @@ bool ConvertTimeToStringWithUs(int64 time_us, GoogleString* time_string) {
 }
 
 bool ConvertStringToTime(const StringPiece& time_string, int64 *time_ms) {
+
   if (time_string.empty()) {
     *time_ms = 0;
     return false;
   }
+
+
+  absl::Time time;
+  // Acceptable Date/Time Formats per
+  // https://tools.ietf.org/html/rfc7231#section-7.1.1.1
+  //
+  // Sun, 06 Nov 1994 08:49:37 GMT    ; IMF-fixdate
+  // Sunday, 06-Nov-94 08:49:37 GMT   ; obsolete RFC 850 format
+  // Sun Nov  6 08:49:37 1994         ; ANSI C's asctime() format
+  static const auto& rfc7231_date_formats = *new std::array<std::string, 3>{
+      "%a, %d %b %Y %H:%M:%S GMT", "%A, %d-%b-%y %H:%M:%S GMT", "%a %b %e %H:%M:%S %Y"};
+  for (const std::string& format : rfc7231_date_formats) {
+    if (absl::ParseTime(format, time_string, &time, nullptr)) {
+      //return ToChronoTime(time);
+      // TODO(XXX)
+      return true;
+    }
+  }
+  return false;
+/*
   PRTime result_time_us = 0;
   PRStatus result = PR_ParseTimeString(time_string.as_string().c_str(),
                                        PR_FALSE, &result_time_us);
@@ -121,6 +142,7 @@ bool ConvertStringToTime(const StringPiece& time_string, int64 *time_ms) {
 
   *time_ms = result_time_us / 1000;
   return true;
+  */
 }
 
 }  // namespace net_instaweb

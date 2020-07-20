@@ -18,7 +18,7 @@
  */
 
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/http_cache.h"
 #include "net/instaweb/http/public/http_value.h"
 #include "net/instaweb/rewriter/public/css_rewrite_test_base.h"

@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/cache/fallback_cache.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/shared_string.h"
 
 namespace {

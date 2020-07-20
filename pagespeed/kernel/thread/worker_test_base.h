@@ -20,7 +20,7 @@
 // This contains things that are common between unit tests for Worker and its
 // subclasses, such as runtime creation and various closures.
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/condvar.h"
 #include "pagespeed/kernel/base/function.h"

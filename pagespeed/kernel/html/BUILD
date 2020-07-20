@@ -56,11 +56,8 @@ cc_library(
         "html_lexer.h",
     ],
     visibility = ["//visibility:public"],
-    copts = [
-        '-std=c++14',        
-    ],    
     deps = [
-        "//gurl:url",
+        "@com_googlesource_googleurl//url:url",
         "//pagespeed/kernel/base:pagespeed_base",
         "//pagespeed/kernel/http:http",
     ],

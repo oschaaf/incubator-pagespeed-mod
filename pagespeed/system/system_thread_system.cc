@@ -20,7 +20,7 @@
 
 #include "pagespeed/system/system_thread_system.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 
 #include "apr_thread_proc.h"  // NOLINT
 

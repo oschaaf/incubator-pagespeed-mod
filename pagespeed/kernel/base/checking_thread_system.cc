@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/base/checking_thread_system.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/atomic_bool.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/condvar.h"

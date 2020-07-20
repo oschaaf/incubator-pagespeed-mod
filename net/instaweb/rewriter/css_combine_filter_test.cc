@@ -23,7 +23,7 @@
 
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/mock_callback.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "net/instaweb/rewriter/public/cache_extender.h"

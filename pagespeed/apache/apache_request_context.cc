@@ -19,7 +19,7 @@
 
 #include "pagespeed/apache/apache_request_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/request_context.h"
 #include "pagespeed/apache/apache_httpd_includes.h"
 

@@ -21,7 +21,7 @@
 
 #include <memory>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/cached_result.pb.h"
 #include "net/instaweb/rewriter/dependencies.pb.h"
 #include "net/instaweb/rewriter/input_info.pb.h"

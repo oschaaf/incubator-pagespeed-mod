@@ -22,7 +22,7 @@
 
 #include "pagespeed/kernel/thread/thread_synchronizer.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 ////#include "strings/stringpiece_utils.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"
 #include "pagespeed/kernel/base/condvar.h"
