@@ -23,7 +23,7 @@
 
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "strings/ascii_ctype.h"
 #include "util/gtl/dense_hash_map.h"
 

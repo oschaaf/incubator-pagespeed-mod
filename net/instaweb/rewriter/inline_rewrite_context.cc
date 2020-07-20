@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/inline_rewrite_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/cached_result.pb.h"
 #include "net/instaweb/rewriter/public/common_filter.h"
 #include "net/instaweb/rewriter/public/output_resource_kind.h"

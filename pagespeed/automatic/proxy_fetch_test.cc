@@ -22,7 +22,7 @@
 
 #include "pagespeed/automatic/proxy_fetch.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/opt/logging/log_record.h"
 #include "net/instaweb/http/public/logging_proto_impl.h"
 #include "net/instaweb/http/public/mock_callback.h"

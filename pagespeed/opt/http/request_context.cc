@@ -20,7 +20,7 @@
 
 #include "pagespeed/opt/http/request_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"
 #include "pagespeed/kernel/base/request_trace.h"
 #include "pagespeed/kernel/base/thread_system.h"

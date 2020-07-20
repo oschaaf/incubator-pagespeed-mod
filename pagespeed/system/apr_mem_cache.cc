@@ -24,7 +24,7 @@
 
 #include "apr_pools.h"  // NOLINT
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/system/apr_thread_compatible_pool.h"
 #include "pagespeed/kernel/base/hasher.h"
 #include "pagespeed/kernel/base/message_handler.h"

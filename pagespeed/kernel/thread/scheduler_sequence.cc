@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/thread/scheduler_sequence.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"
 #include "pagespeed/kernel/base/function.h"
 #include "pagespeed/kernel/base/thread_system.h"

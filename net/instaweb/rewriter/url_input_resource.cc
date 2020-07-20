@@ -21,7 +21,7 @@
 
 #include "net/instaweb/rewriter/public/url_input_resource.h"
 
-#include "base/logging.h"               // for COMPACT_GOOGLE_LOG_FATAL, etc
+#include "base_/log_shim.h"               // for COMPACT_GOOGLE_LOG_FATAL, etc
 #include "net/instaweb/rewriter/public/rewrite_options.h"
 #include "net/instaweb/rewriter/public/rewrite_query.h"
 #include "pagespeed/kernel/base/string_util.h"

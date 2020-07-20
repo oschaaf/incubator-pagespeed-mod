@@ -25,7 +25,7 @@
 #include <map>
 #include <utility>
 
-#include "base/logging.h"               // for Check_EQImpl, CHECK_EQ
+#include "base_/log_shim.h"               // for Check_EQImpl, CHECK_EQ
 #include "pagespeed/kernel/base/function.h"
 #include "pagespeed/kernel/base/shared_string.h"
 #include "pagespeed/kernel/base/string_util.h"

@@ -30,7 +30,7 @@
 #include <utility>  // for pair
 
 #include "apr_general.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/http_dump_url_async_writer.h"
 #include "net/instaweb/http/public/http_dump_url_fetcher.h"
 #include "net/instaweb/http/public/rate_controller.h"

@@ -21,7 +21,7 @@
 #include "pagespeed/automatic/proxy_interface.h"
 
 //#include "base/callback.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/config/rewrite_options_manager.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "pagespeed/opt/logging/log_record.h"

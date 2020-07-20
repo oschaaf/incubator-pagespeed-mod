@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/css_rewrite_test_base.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/css_url_extractor.h"
 #include "net/instaweb/rewriter/public/resource_namer.h"
 #include "pagespeed/kernel/base/gtest.h"

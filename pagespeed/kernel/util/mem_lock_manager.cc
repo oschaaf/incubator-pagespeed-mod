@@ -22,7 +22,7 @@
 
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/timer.h"
 #include "pagespeed/kernel/util/mem_lock.h"
 #include "pagespeed/kernel/util/mem_lock_state.h"

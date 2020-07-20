@@ -21,7 +21,7 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/http_value.h"
 #include "pagespeed/kernel/base/google_message_handler.h"
 #include "pagespeed/kernel/base/stdio_file_system.h"

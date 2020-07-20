@@ -28,7 +28,7 @@
 #include "apr_pools.h"
 #include "apr_thread_proc.h"
 #include "apr_version.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/http_cache.h"
 #include "net/instaweb/http/public/http_value.h"

@@ -20,7 +20,7 @@
 
 #include <memory>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/controller/controller.pb.h"
 #include "pagespeed/controller/controller_grpc_mocks.h"
 #include "pagespeed/controller/expensive_operation_rpc_context.h"

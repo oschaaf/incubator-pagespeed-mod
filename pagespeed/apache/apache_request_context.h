@@ -24,7 +24,7 @@
 #ifndef PAGESPEED_APACHE_APACHE_REQUEST_CONTEXT_H_
 #define PAGESPEED_APACHE_APACHE_REQUEST_CONTEXT_H_
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/system/system_request_context.h"
 

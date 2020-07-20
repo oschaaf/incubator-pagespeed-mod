@@ -27,7 +27,7 @@
 
 //#include "base/debug/debugger.h"
 //#include "base/debug/stack_trace.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/apache/apache_httpd_includes.h"
 #include "pagespeed/apache/apache_logging_includes.h"
 

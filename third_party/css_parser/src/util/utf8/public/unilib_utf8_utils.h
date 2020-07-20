@@ -24,7 +24,10 @@
 // These definitions are self-contained and have no dependencies.
 // They are also exported from unilib.h for legacy reasons.
 
-#include "base/integral_types.h"        // for char32, uint32
+//#include "base/integral_types.h"        // for char32, uint32
+typedef unsigned int uint32;
+typedef signed int int32;
+typedef int32 char32;
 
 namespace UniLib {
 

@@ -20,7 +20,7 @@
 
 #include "net/instaweb/http/public/cache_url_async_fetcher.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/async_fetch_with_lock.h"
 #include "net/instaweb/http/public/http_cache.h"

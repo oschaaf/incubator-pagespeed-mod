@@ -24,7 +24,7 @@
 #include <queue>
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/url_async_fetcher.h"
 #include "pagespeed/kernel/base/abstract_mutex.h"

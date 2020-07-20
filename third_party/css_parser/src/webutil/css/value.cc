@@ -23,7 +23,7 @@
 
 #include "webutil/css/value.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "strings/memutil.h"
 #include "webutil/css/fallthrough_intended.h"
 #include "webutil/html/htmlcolor.h"

@@ -25,7 +25,7 @@
 #include "base/scoped_ptr.h"
 
 #include "base/callback.h"
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "base/macros.h"
 #include "testing/base/public/googletest.h"
 #include "gtest/gtest.h"

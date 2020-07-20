@@ -20,7 +20,7 @@
 
 #include "pagespeed/controller/schedule_rewrite_rpc_handler.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/function.h"
 #include "pagespeed/kernel/util/grpc.h"
 

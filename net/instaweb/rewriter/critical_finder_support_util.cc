@@ -25,7 +25,7 @@
 #include <set>
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/public/global_constants.h"
 #include "net/instaweb/rewriter/critical_keys.pb.h"
 #include "net/instaweb/rewriter/public/property_cache_util.h"

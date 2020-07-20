@@ -18,7 +18,7 @@
  */
 
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/apache/apache_writer.h"
 #include "pagespeed/apache/header_util.h"
 #include "net/instaweb/http/public/async_fetch.h"

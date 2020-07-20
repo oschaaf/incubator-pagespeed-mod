@@ -20,7 +20,7 @@
 
 #include "net/instaweb/http/public/fetcher_test.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/http/public/http_cache.h"
 #include "net/instaweb/http/public/url_async_fetcher.h"
 #include "pagespeed/kernel/base/google_message_handler.h"

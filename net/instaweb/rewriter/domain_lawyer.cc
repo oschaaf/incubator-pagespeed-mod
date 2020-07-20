@@ -25,7 +25,7 @@
 #include <utility>  // for std::pair
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/message_handler.h"
 #include "pagespeed/kernel/base/stl_util.h"

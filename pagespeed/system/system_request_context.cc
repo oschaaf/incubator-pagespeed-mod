@@ -19,7 +19,7 @@
 
 #include "pagespeed/system/system_request_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 //#include "strings/stringpiece_utils.h"
 #include "pagespeed/kernel/http/domain_registry.h"
 

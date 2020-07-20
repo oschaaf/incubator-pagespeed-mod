@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/rewrite_driver_factory.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/config/rewrite_options_manager.h"
 #include "net/instaweb/http/public/http_cache.h"
 #include "net/instaweb/http/public/http_dump_url_async_writer.h"

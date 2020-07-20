@@ -20,9 +20,7 @@
 #ifndef PAGESPEED_KERNEL_BASE_BASICTYPES_H_
 #define PAGESPEED_KERNEL_BASE_BASICTYPES_H_
 
-//#include "base/basictypes.h"
-//#include "base/macros.h"
-
+#include "glog/logging.h"
 #include <inttypes.h>
 
 typedef int64_t int64;
@@ -33,7 +31,7 @@ typedef uint8_t uint8;
 typedef int8_t int8;
 
 // this gets us check/dcheck/(v)log etc
-#include "base/logging.h"
+#include "base/macros.h"
 
 #define arraysize(a)                                                           \
   ((sizeof(a) / sizeof(*(a))) /                                                \

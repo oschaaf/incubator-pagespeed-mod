@@ -24,7 +24,7 @@
 #include <new>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/arena.h"
 #include "pagespeed/kernel/base/atom.h"
 #include "pagespeed/kernel/base/message_handler.h"

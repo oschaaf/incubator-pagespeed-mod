@@ -23,7 +23,7 @@
 #include <cstddef>
 #include <memory>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 //#include "strings/stringpiece_utils.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/string_util.h"

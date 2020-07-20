@@ -41,7 +41,7 @@
 #include <list>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/benchmark.h"
 #include "pagespeed/kernel/base/vector_deque.h"
 

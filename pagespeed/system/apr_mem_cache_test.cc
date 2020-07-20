@@ -29,7 +29,7 @@
 
 #include "apr_network_io.h"  // NOLINT
 #include "apr_pools.h"  // NOLINT
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/google_message_handler.h"
 #include "pagespeed/kernel/base/gtest.h"
 #include "pagespeed/kernel/base/hasher.h"

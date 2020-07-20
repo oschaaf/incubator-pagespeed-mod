@@ -21,6 +21,7 @@
 #include "pagespeed/kernel/base/hostname_util.h"
 
 #include <limits.h>
+#include <unistd.h>
 // The following break portability.
 
 // Windows doesn't use <unistd.h> nor does it define HOST_NAME_MAX.
@@ -41,7 +42,7 @@
 #endif  // HOST_NAME_MAX
 #endif  // WIN32
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/string.h"
 #include "pagespeed/kernel/base/string_util.h"
 

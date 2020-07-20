@@ -20,7 +20,7 @@
 
 #include "pagespeed/controller/queued_expensive_operation_controller.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 
 namespace net_instaweb {
 

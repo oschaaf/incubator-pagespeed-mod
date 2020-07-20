@@ -26,7 +26,7 @@
 #include "apr_pools.h"
 #include "ap_mpm.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/apache/apache_config.h"
 #include "pagespeed/apache/apache_message_handler.h"
 #include "pagespeed/apache/apache_server_context.h"

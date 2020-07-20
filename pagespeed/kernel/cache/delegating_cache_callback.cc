@@ -21,7 +21,7 @@
 
 #include "pagespeed/kernel/cache/delegating_cache_callback.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/string.h"
 #include "pagespeed/kernel/cache/cache_interface.h"
 

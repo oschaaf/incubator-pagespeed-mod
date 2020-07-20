@@ -41,7 +41,7 @@
 #include <memory>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "net/instaweb/rewriter/public/process_context.h"
 //#include "strings/stringpiece_utils.h"
 #include "pagespeed/automatic/static_rewriter.h"

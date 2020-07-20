@@ -21,7 +21,7 @@
 
 #include "net/instaweb/rewriter/public/js_replacer.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/js/js_keywords.h"
 
 using pagespeed::JsKeywords;

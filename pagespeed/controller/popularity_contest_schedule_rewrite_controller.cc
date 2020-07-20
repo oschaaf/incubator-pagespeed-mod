@@ -23,7 +23,7 @@
 #include <unordered_map>
 #include <utility>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/controller/priority_queue.h"
 #include "pagespeed/kernel/base/function.h"
 #include "pagespeed/kernel/base/statistics.h"

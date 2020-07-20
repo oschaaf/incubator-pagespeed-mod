@@ -22,7 +22,7 @@
 
 #include <cstddef>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "external/brotli/c/include/brotli/decode.h"
 #include "external/brotli/c/include/brotli/encode.h"
 #include "pagespeed/kernel/base/message_handler.h"

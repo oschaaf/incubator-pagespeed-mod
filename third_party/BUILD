@@ -13,7 +13,7 @@ cc_library(
         "@hiredis//:hiredis",
         "@jsoncpp//:jsoncpp",
         "@re2//:re2",
-        "@icu//:icu",
+        "@org_unicode_icuuc//:common",
         "@libpng//:libpng",
         "@libwebp//:libwebp",
         "@google_sparsehash//:google_sparsehash",

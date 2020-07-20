@@ -29,7 +29,7 @@
 #include <string>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "base/macros.h"
 #include "strings/strutil.h"
 #include "third_party/utf/utf.h"

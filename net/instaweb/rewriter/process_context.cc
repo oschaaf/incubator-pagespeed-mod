@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/process_context.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/html/html_keywords.h"
 #include "pagespeed/kernel/http/domain_registry.h"
 #include "pagespeed/kernel/http/google_url.h"

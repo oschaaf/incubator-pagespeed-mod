@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/thread/scheduler_based_abstract_lock.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/basictypes.h"
 #include "pagespeed/kernel/base/debug.h"
 #include "pagespeed/kernel/base/function.h"

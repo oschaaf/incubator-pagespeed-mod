@@ -27,7 +27,7 @@
 #include <unordered_map>
 #include <vector>
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "base/macros.h"
 #include "pagespeed/kernel/base/basictypes.h"
 

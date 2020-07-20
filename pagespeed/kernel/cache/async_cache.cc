@@ -20,7 +20,7 @@
 
 #include "pagespeed/kernel/cache/async_cache.h"
 
-#include "base/logging.h"
+#include "base_/log_shim.h"
 #include "pagespeed/kernel/base/atomic_bool.h"
 #include "pagespeed/kernel/base/atomic_int32.h"
 #include "pagespeed/kernel/base/function.h"

@@ -20,7 +20,7 @@
 
 #include "net/instaweb/rewriter/public/cacheable_resource_base.h"
 
-#include "base/logging.h"               // for operator<<, etc
+#include "base_/log_shim.h"               // for operator<<, etc
 #include "net/instaweb/rewriter/config/rewrite_options_manager.h"
 #include "net/instaweb/http/public/async_fetch.h"
 #include "net/instaweb/http/public/async_fetch_with_lock.h"
